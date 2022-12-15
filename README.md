@@ -1,7 +1,7 @@
 # anyservice
 将任意程序或脚本安装成Windows服务
 
-Usage:
+```
 anyservice --remove  <ServcieName>
                      Remove service
 anyservice --install <ServcieName> [optional] <Application> [Arguments]
@@ -17,3 +17,4 @@ anyservice --install <ServcieName> [optional] <Application> [Arguments]
         --stopchild                Stop subprocess when service stop.
         --norestart                Do not restart when process stop.
         --auto                     Auto start during system startup.
+```
