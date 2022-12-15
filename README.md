@@ -1,5 +1,5 @@
 # anyservice
-将任意程序或脚本安装成Windows服务
+将任意程序或脚本安装成Windows服务，使用MinGW编译。
 
 ```
 anyservice --remove  <ServcieName>
