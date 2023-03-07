@@ -17,4 +17,7 @@ anyservice --install <ServcieName> [optional] <Application> [Arguments]
         --stopchild                Stop subprocess when service stop.
         --norestart                Do not restart when process stop.
         --auto                     Auto start during system startup.
+
+    --stopchild 停止服务时终止Application及其子进程；否则仅终止Application。
+    --norestart 当Application终止时不自动重启；否则会自动重启Application。
 ```
