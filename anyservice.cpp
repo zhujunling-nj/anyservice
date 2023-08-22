@@ -83,14 +83,14 @@ int print_last_error(int last_error = 0) {
         last_error = GetLastError();
     }
 
-    LPTSTR lpMsgBuf;
+    LPTSTR buffer;
     FormatMessage(
         FORMAT_MESSAGE_ALLOCATE_BUFFER | FORMAT_MESSAGE_FROM_SYSTEM,
-        NULL, last_error, language_id, (LPTSTR)&lpMsgBuf, 0, NULL
+        NULL, last_error, language_id, (LPTSTR)&buffer, 0, NULL
     );
 
-    fprintf(stderr, lpMsgBuf);
-    LocalFree(lpMsgBuf);
+    fprintf(stderr, buffer);
+    LocalFree(buffer);
     return last_error;
 }
 
